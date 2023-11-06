@@ -3,7 +3,10 @@ export type TFilm = {
   name: string;
   previewImage: string;
   previewVideoLink: string;
+  genre: string;
 }
+
+export type TFilms = TFilm[];
 
 export type TFullFilmInfo = {
   id: string;
@@ -16,8 +19,19 @@ export type TFullFilmInfo = {
   rating: number;
   scoresCount: number;
   director: string;
-  starring: [string];
+  starring: string[];
   runTime: number;
+  genre: string;
+  released: number;
+  isFavorite: boolean;
+}
+
+export type TPromo = {
+  id: string;
+  name: string;
+  posterImage: string;
+  backgroundImage: string;
+  videoLink: string;
   genre: string;
   released: number;
   isFavorite: boolean;

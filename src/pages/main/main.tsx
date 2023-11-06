@@ -1,23 +1,26 @@
 import { useState } from 'react';
-import { TFilm, TFullFilmInfo } from '../../types/film-type.ts';
-import { FILM_COUNT_PER_STEP } from '../../const.ts';
 import { Helmet } from 'react-helmet-async';
+import { useAppSelector, /*useAppDispatch*/ } from '../../hooks/index.ts';
+import { FILM_COUNT_PER_STEP } from '../../const.ts';
 import Header from '../../components/header.tsx';
 import FilmCardDesc from '../../components/film-card-desc.tsx';
 import PlayBtn from '../../components/play-btn.tsx';
 import AddMyListBtn from '../../components/add-mylist-btn.tsx';
 import GenresList from '../../components/genres-list.tsx';
-import FilmList from './main-components/film-list.tsx';
+import FilmList from '../../components/film-list.tsx';
 import CatalogMoreBtn from '../../components/catalog-more-btn.tsx';
 import Footer from '../../components/footer.tsx';
 
-type MainProps = {
-  films: TFilm[];
-  fullFilmInfo: TFullFilmInfo;
-}
-
-function Main({ films, fullFilmInfo}: MainProps): JSX.Element {
-  const {posterImage, backgroundImage, name, genre, released} = fullFilmInfo;
+function Main(): JSX.Element {
+  const films = useAppSelector((state) => state.films);
+  const promo = useAppSelector((state) => state.promo);
+  const {
+    name,
+    posterImage,
+    backgroundImage,
+    genre,
+    released,
+  } = promo;
   const [showMoreCard, setShowMoreCard] = useState(FILM_COUNT_PER_STEP);
   const loadMore = () => {
     setShowMoreCard((prev: number) => prev + FILM_COUNT_PER_STEP);

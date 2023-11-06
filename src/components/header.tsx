@@ -15,7 +15,7 @@ function Header({ isMyList }: HeaderProps): JSX.Element {
         <li className="user-block__item">
           <div className="user-block__avatar">
             <Link to="/mylist">
-              <img src="img/avatar.jpg" alt="User avatar" width="63" height="63" />
+              <img src="https://i.pravatar.cc/128" alt="User avatar" width="63" height="63" />
             </Link>
           </div>
         </li>

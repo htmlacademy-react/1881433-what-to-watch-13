@@ -1,6 +1,8 @@
 const FILM_COUNT_PER_STEP = 8;
 
-export enum AppRoute {
+const TIMEOUT_SHOW_ERROR = 2000;
+
+enum AppRoute {
   Main = '/',
   SignIn = '/login',
   MyList = '/mylist',
@@ -10,10 +12,24 @@ export enum AppRoute {
   NotFound = '/not-found-screen'
 }
 
-export enum AuthorizationStatus {
+enum AuthorizationStatus {
   Auth = 'AUTH',
   NoAuth = 'NO_AUTH',
   Unknown = 'UNKNOWN',
 }
 
-export { FILM_COUNT_PER_STEP };
+enum APIRoute {
+  Film = '/films',
+  Promo = '/promo',
+  SignIn = '/login',
+  SignOut = '/logout',
+}
+
+export {
+  FILM_COUNT_PER_STEP,
+  TIMEOUT_SHOW_ERROR,
+  AppRoute,
+  AuthorizationStatus,
+  APIRoute,
+};
+

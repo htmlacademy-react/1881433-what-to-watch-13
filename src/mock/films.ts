@@ -2,154 +2,179 @@ import { TFilm } from '../types/film-type.ts';
 
 const FILMS: TFilm[] = [
   {
-    id: '75499a31-c442-4467-9f8d-b56b19b70153',
+    id: '17a0f38a-e9b3-48e6-8f20-a2cd28dfdaa0',
     name: 'Fantastic Beasts: The Crimes of Grindelwald',
     previewImage: 'https://13.design.pages.academy/static/film/preview/fantastic-beasts-the-crimes-of-grindelwald.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Fantasy'
   },
   {
-    id: '4f87ca6c-834a-4008-85ec-115ce9fb431a',
+    id: '345a742d-e05f-4ef1-81d5-c49adb4c0ed6',
     name: 'Bohemian Rhapsody',
     previewImage: 'https://13.design.pages.academy/static/film/preview/bohemian_rhapsody.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Drama'
   },
   {
-    id: 'fbb60755-578c-4c5e-a56e-2ea2899c348c',
+    id: '155bd421-cad8-45a6-890f-885b24d34f35',
     name: 'Macbeth',
     previewImage: 'https://13.design.pages.academy/static/film/preview/macbeth.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Drama'
   },
   {
-    id: '2316235a-9234-473d-9137-d12e3eb76421',
+    id: '7608f902-f04f-410a-b1fa-f17abac7e940',
     name: 'Aviator',
     previewImage: 'https://13.design.pages.academy/static/film/preview/aviator.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Drama'
   },
   {
-    id: 'f8edb74c-b364-47e6-aeb2-87523de01fa4',
+    id: '619b6afb-b522-4d0a-9e47-bc4cfecabbcf',
     name: 'We need to talk about Kevin',
     previewImage: 'https://13.design.pages.academy/static/film/preview/we-need-to-talk-about-kevin.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Drama'
   },
   {
-    id: 'd179807c-02ae-450e-ae02-afc33b8ac4ef',
+    id: '4bf9d780-1efa-456e-bfb3-cfca5449101d',
     name: 'What We Do in the Shadows',
     previewImage: 'https://13.design.pages.academy/static/film/preview/what-we-do-in-the-shadows.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Comedy'
   },
   {
-    id: 'a8be20d2-81a1-4f51-9671-5620379d03dd',
+    id: '144b3d38-3637-4f76-88cd-f2238351e4a0',
     name: 'The Revenant',
     previewImage: 'https://13.design.pages.academy/static/film/preview/revenant.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Action'
   },
   {
-    id: '5d31ae11-c877-4525-973d-8257309c42bd',
+    id: '26da3831-b542-4b20-97d6-989acd2b02b7',
     name: 'Johnny English',
     previewImage: 'https://13.design.pages.academy/static/film/preview/johnny-english.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Comedy'
   },
   {
-    id: '827d7f58-c8c0-44bf-af42-1f8a6e1b88d8',
+    id: '3fc39d14-68f0-4c2b-86b0-af2ad7ec784c',
     name: 'Shutter Island',
     previewImage: 'https://13.design.pages.academy/static/film/preview/shutter-island.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Thriller'
   },
   {
-    id: '196151f7-6373-4b44-bebd-429465645798',
+    id: 'fbb8e1eb-2046-4cb2-9816-0b05dfbae477',
     name: 'Pulp Fiction',
     previewImage: 'https://13.design.pages.academy/static/film/preview/pulp-fiction.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Crime'
   },
   {
-    id: '5635d1f4-091d-4f68-8b65-bc9e166f978e',
+    id: '1ac39dc4-d4ce-4dd8-bc34-cbfed4dd05a8',
     name: 'No Country for Old Men',
     previewImage: 'https://13.design.pages.academy/static/film/preview/no-country-for-old-men.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Crime'
   },
   {
-    id: '33acf319-1eb3-480e-83e3-cdf142c372b0',
+    id: '842cfe12-bc81-46a9-9758-aca5c06498e9',
     name: 'Snatch',
     previewImage: 'https://13.design.pages.academy/static/film/preview/snatch.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Comedy'
   },
   {
-    id: 'd0cd5215-a119-44be-9bf0-910a52af81f3',
+    id: '0bc26bef-e7f9-415c-b898-49bc86eb4581',
     name: 'Moonrise Kingdom',
     previewImage: 'https://13.design.pages.academy/static/film/preview/moonrise-kingdom.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Adventure'
   },
   {
-    id: '949ef6c6-eb3d-4f03-9b23-d31444f022ce',
+    id: 'eba49325-bdab-4217-888e-ed228f1a6815',
     name: 'Seven Years in Tibet',
     previewImage: 'https://13.design.pages.academy/static/film/preview/seven-years-in-tibet.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Adventure'
   },
   {
-    id: '4f77c270-c37d-4f89-b153-d75de07635a5',
+    id: 'a72a7c67-fcbe-4c1d-9519-40484a32da1a',
     name: 'Midnight Special',
     previewImage: 'https://13.design.pages.academy/static/film/preview/midnight-special.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Action'
   },
   {
-    id: 'c43905f5-9c00-43d2-9514-6933208c11b6',
+    id: 'aeecff5b-abc0-4e41-9d1b-23ff3f700871',
     name: 'War of the Worlds',
     previewImage: 'https://13.design.pages.academy/static/film/preview/war-of-the-worlds.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Adventure'
   },
   {
-    id: 'fbf1286c-f220-422a-b9d7-a8c1c5323a09',
+    id: '3b420acf-9565-49ab-9b5c-e3367232a92d',
     name: 'Dardjeeling Limited',
     previewImage: 'https://13.design.pages.academy/static/film/preview/dardjeeling_limited.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Adventure'
   },
   {
-    id: '6eaeec70-b362-49e3-82d6-cff4752a913c',
+    id: 'e0de1993-c046-44b0-9e86-a4192cf7f8db',
     name: 'Orlando',
     previewImage: 'https://13.design.pages.academy/static/film/preview/orlando.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Drama'
   },
   {
-    id: 'c1cacc5c-b827-499d-9fad-50734ae0a7c1',
+    id: 'e4c412b7-4d9a-4a10-a687-18c34bd2ed98',
     name: 'Legend',
     previewImage: 'https://13.design.pages.academy/static/film/preview/legend.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Crime'
   },
   {
-    id: 'e5f9d8ba-45dc-454a-928a-f9a0a311671f',
+    id: '7abed231-8a58-4c5a-8819-047d4e582f09',
     name: 'A Star Is Born',
     previewImage: 'https://13.design.pages.academy/static/film/preview/A_Star_Is_Born.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Drama'
   },
   {
-    id: 'ffb71f6d-15c6-4089-9f24-f67f950aadf6',
+    id: '7f954388-2774-4ba0-ad52-b8d234b0439b',
     name: 'Bronson',
     previewImage: 'https://13.design.pages.academy/static/film/preview/bronson.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Action'
   },
   {
-    id: '29c9fb8d-e36b-4508-a2a5-ff55151a5d03',
+    id: 'c8164e8f-1156-490c-95f7-52666b51f60a',
     name: 'Gangs of new york',
     previewImage: 'https://13.design.pages.academy/static/film/preview/gangs_of_new_york.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4',
+    genre: 'Crime'
   },
   {
-    id: '1351a7b7-98c4-4277-bf6a-4e3059399937',
+    id: '27081c4b-3255-409e-b451-bd0bdc3d6826',
     name: 'Beach',
     previewImage: 'https://13.design.pages.academy/static/film/preview/beach.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Adventure'
   },
   {
-    id: 'da103d19-4512-4936-a001-19f23d08bd6c',
+    id: '7cba8ac1-9f2e-480a-b913-9419add40975',
     name: 'Matrix',
     previewImage: 'https://13.design.pages.academy/static/film/preview/matrix.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/dog.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Action'
   },
   {
-    id: 'a308923c-c8ce-4c29-a773-35630d69853b',
+    id: 'def24419-7296-4385-b097-785e8a6aad53',
     name: 'Once Upon a Time in America',
     previewImage: 'https://13.design.pages.academy/static/film/preview/Once_Upon_a_Time_in_America.jpg',
-    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4'
+    previewVideoLink: 'https://13.design.pages.academy/static//film/video/traffic.mp4',
+    genre: 'Crime'
   }
 ];
 
@@ -171,4 +196,4 @@ const FULL_FILM_INFO = {
   isFavorite: false
 };
 
-export { FILMS, FULL_FILM_INFO };
+export { FILMS, FULL_FILM_INFO};

@@ -1,17 +1,24 @@
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { AppRoute, AuthorizationStatus } from '../../const.ts';
+import { useAppSelector } from '../../hooks/index.ts';
+import AppPrivateRoute from '../private-route.tsx';
 import Main from '../../pages/main/main.tsx';
 import NotFoundScreen from '../../pages/not-found-screen/not-found-screen.tsx';
-import { TFilm, TFullFilmInfo } from '../../types/film-type.ts';
 import MyList from '../../pages/my-list/my-list.tsx';
+import SignIn from '../../pages/sign-in/sign-in.tsx';
+import Film from '../../pages/film/film.tsx';
+import LoadingScreen from '../../pages/loading-screen/loading-screen.tsx';
 
-type AppProps = {
-  films: TFilm[];
-  fullFilmInfo: TFullFilmInfo;
-}
+function App() {
+  const authorizationStatus = useAppSelector((state) => state.authorizationStatus);
+  const isFilmsDataLoading = useAppSelector((state) => state.isFilmsDataLoading);
 
-function App({ films, fullFilmInfo }: AppProps) {
+  if (authorizationStatus === AuthorizationStatus.Unknown || isFilmsDataLoading) {
+    return (
+      <LoadingScreen />
+    );
+  }
   return (
     <HelmetProvider>
       <BrowserRouter>
@@ -19,15 +26,30 @@ function App({ films, fullFilmInfo }: AppProps) {
           <Route
             path={AppRoute.Main}
             element={
-              <Main
-                films={films}
-                fullFilmInfo={fullFilmInfo}
-              />
+              <Main />
+            }
+          />
+          <Route
+            path={AppRoute.SignIn}
+            element={
+              <SignIn />
             }
           />
           <Route
             path={AppRoute.MyList}
-            element={<MyList />}
+            element={
+              <AppPrivateRoute
+                authorizationStatus={AuthorizationStatus.Auth}
+              >
+                <MyList />
+              </AppPrivateRoute>
+            }
+          />
+          <Route
+            path={`${AppRoute.Film}/:filmId`}
+            element={
+              <Film />
+            }
           />
           <Route
             path="*"
@@ -38,5 +60,6 @@ function App({ films, fullFilmInfo }: AppProps) {
     </HelmetProvider>
   );
 }
+
 
 export default App;
